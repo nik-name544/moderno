@@ -43,6 +43,7 @@ body {
 
 .title {
     color: $bg;
+    @include f700;
     font-weight: 700;
     font-size: 36px;
     line-height: 60px;
