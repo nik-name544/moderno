@@ -32,7 +32,7 @@ gulp.task('css', function (){
     ])
         .pipe(concat('_libs.scss'))
         .pipe(cssmin())
-        .pipe(gulp.dest('app/scss'))
+        .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({ stream: true }))
 });
 

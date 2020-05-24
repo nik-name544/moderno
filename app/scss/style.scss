@@ -380,3 +380,265 @@
     }
 }
 // advantages end
+// author start
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+
+    &__box {
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-right: 45px;
+        max-width: 260px;
+
+        span {
+            @include f700;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        background-color: #ffffff;
+    }
+}
+
+// author end
+// tutorial start
+
+.tutorial {
+    padding: 70px 0 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+.tutorial__item {
+    &-img {
+        min-height: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &-title {
+        background-color: #f8f8f8;
+        font-size: 24px;
+        text-align: center;
+        @include f700;
+        padding: 30px 10px;
+        color: $bg;
+    }
+}
+// tutorial end
+// footer start
+
+.footer {
+    background-color: $bg;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0 80px;
+    }
+}
+
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+
+    &-menu {
+        max-width: 220px;
+    }
+
+    &-title {
+        font-size: 22px;
+        color: #ffffff;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
+
+.footer__info {
+    margin-top: 18px;
+    @include f500;
+    color: #ffffff;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+        content: "\f041";
+        font-family: "icomoon";
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.footer__info-phone {
+    &::before {
+        content: "\f095";
+    }
+}
+
+.footer__col-list {
+    a {
+        margin-bottom: 12px;
+        color: #b7c3c8;
+        padding-left: 22px;
+        position: relative;
+        &::before {
+            content: "\f105";
+            position: absolute;
+            color: $green;
+            left: 0;
+            font-size: 18px;
+            font-family: "icomoon";
+        }
+    }
+}
+
+.footer__copy {
+    border-top: 1px solid #424d53;
+}
+
+.footer__copy-text {
+    text-align: center;
+    font-size: 15px;
+    color: #919699;
+    padding: 25px 0px;
+}
+
+.footer__social-link {
+    margin-bottom: 33px;
+
+    li {
+        display: inline-block;
+
+        & + li {
+            margin-left: 7px;
+        }
+    }
+
+    a {
+        width: 28px;
+        height: 28px;
+        background-image: url(../img/css_sprites.png);
+
+        & + a {
+            margin-left: 7px;
+
+        }
+    }
+}
+
+.link-2 {
+    background-position: -31px -1px;
+}
+
+.link-3 {
+    background-position: -1px -31px;
+}
+
+.link-4 {
+    background-position: -31px -31px;
+}
+
+.link-5 {
+    background-position: -61px -1px;
+}
+
+.footer__form-title {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer__form {
+    position: relative;
+    input {
+        border: none;
+        background-color: #2f3c43;
+        display: block;
+        width: 100%;
+        height: 40px;
+        color: #ffffff;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 50px;
+
+        &::placeholder {
+        color: #697378;
+
+        }
+    }
+
+    button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 40px;
+        width: 43px;
+        cursor: pointer;
+
+        &::before {
+            content: "\f105";
+            position: absolute;
+            font-family: 'icomoon';
+            color: #ffffff;
+            font-size: 20px;
+            top: 11px;
+            left: 13px;
+        }
+
+    }
+}
+
+// footer end
+
