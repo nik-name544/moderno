@@ -9,6 +9,7 @@
   "author": "nik",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.7",
     "cssmin": "^0.4.3",
     "del": "^5.0.0",
